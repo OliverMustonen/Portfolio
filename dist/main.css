@@ -358,13 +358,40 @@ button:hover {
       width: 25rem;
 
     }
+
+    #Proj-11 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 9 / 12;
+      padding: 1rem;
+      color: rgb(0, 140, 255);
+      background-color: rgba(6, 24, 48, 0.774);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      width: 25rem;
+
+    }
+    #Proj-12 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 9 / 12;
+      padding: 1rem;
+      color: rgb(0, 140, 255);
+      background-color: rgba(6, 24, 48, 0.774);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      width: 25rem;
+
+    }
    
     
   
 
     .contact_inf {
       grid-column: 2 / 5;
-      margin-top: 300rem;
+      margin-top: 380rem;
       padding: 1rem;
       color: rgb(0, 140, 255);
       background-color: rgba(7, 7, 43, 0.63);
@@ -405,6 +432,12 @@ button:hover {
               #Proj-8 {
                 margin-left: 70rem;
                 }
+                #Proj-10 {
+                  margin-left: 70rem;
+                  }
+                  #Proj-11 {
+                    margin-left: 70rem;
+                    }
 }
 @media(max-width: 1600px) {
   #Proj-1 {
@@ -425,6 +458,12 @@ button:hover {
             #Proj-8 {
               margin-left: 60rem;
               }
+              #Proj-11 {
+                margin-left: 60rem;
+                }
+                #Proj-12 {
+                  margin-left: 60rem;
+                  }
 }
 @media(max-width: 1400px) {
   #Proj-1 {
@@ -445,6 +484,12 @@ button:hover {
             #Proj-8 {
               margin-left: 55rem;
               }
+              #Proj-11 {
+                margin-left: 55rem;
+                }
+                #Proj-12 {
+                  margin-left: 55rem;
+                  }
 }
 @media(max-width: 1300px) {
   #Proj-1 {
@@ -477,6 +522,12 @@ button:hover {
                     #Proj-10 {
                       margin-left: 2rem;
                       }
+                      #Proj-11 {
+                        margin-left: 50rem;
+                        }
+                        #Proj-12 {
+                          margin-left: 50rem;
+                          }
 }
 @media(max-width: 1200px) {
   #Proj-1 {
@@ -497,6 +548,12 @@ button:hover {
             #Proj-8 {
               margin-left: 46rem;
               }
+              #Proj-11 {
+                margin-left: 46rem;
+                }
+                #Proj-12 {
+                  margin-left: 46rem;
+                  }
     
 }
 @media(max-width: 1160px) {
@@ -518,6 +575,12 @@ button:hover {
             #Proj-8 {
               margin-left: 45rem;
               }
+              #Proj-11 {
+                margin-left: 45rem;
+                }
+                #Proj-12 {
+                  margin-left: 45rem;
+                  }
           
 }
 @media(max-width: 1024px) {
@@ -539,7 +602,12 @@ button:hover {
             #Proj-8 {
               margin-left: 35rem;
               }
-      
+              #Proj-11 {
+                margin-left: 35rem;
+                }
+                #Proj-12 {
+                  margin-left: 35rem;
+                  }
 }
    
     

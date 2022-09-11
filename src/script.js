@@ -1,5 +1,6 @@
 import './style.css'
 
+
 import * as THREE from 'three'
 import gsap from 'gsap'
 
@@ -554,18 +555,72 @@ const scroll_hid = document.getElementById("body")
   
   const pr_10 = document.getElementById('Proj-10')  
 
+     //Projekt_11
+
+     const video_11 = document.getElementById("vid-11");
+     const vidTexture_11 = new THREE.VideoTexture(video_11);
+    
+     vidTexture_11.minFilter = THREE.LinearFilter;
+     vidTexture_11.magFilter = THREE.LinearFilter;
+     
+     const projekt_11 = new THREE.Mesh(
+       new THREE.PlaneGeometry(2, 1, 1,),
+       new THREE.MeshStandardMaterial({
+         map: vidTexture_11,
+         side: THREE.FrontSide,
+         toneMapped: false,
+       })
+     );
+     scene.add(projekt_11);
+     
+     projekt_11.position.x = 2.6
+     projekt_11.position.y = -5.7
+     projekt_11.position.z = 17
+     projekt_11.rotation.y = 5.8
+    
+    const pr_11 = document.getElementById('Proj-11')  
+
+         //Projekt_12
+
+         const video_12 = document.getElementById("vid-12");
+         const vidTexture_12 = new THREE.VideoTexture(video_12);
+        
+         vidTexture_12.minFilter = THREE.LinearFilter;
+         vidTexture_12.magFilter = THREE.LinearFilter;
+         
+         const projekt_12 = new THREE.Mesh(
+           new THREE.PlaneGeometry(2, 1, 1,),
+           new THREE.MeshStandardMaterial({
+             map: vidTexture_12,
+             side: THREE.FrontSide,
+             toneMapped: false,
+           })
+         );
+         scene.add(projekt_12);
+         
+         projekt_12.position.x = 2.6
+         projekt_12.position.y = -7.1
+         projekt_12.position.z = 17
+         projekt_12.rotation.y = 5.8
+        
+        const pr_12 = document.getElementById('Proj-12')  
+
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff, 2)
 pointLight.position.x = 0
 pointLight.position.y = -2
 pointLight.position.z = 20
-pointLight.intensity = 1
+pointLight.intensity = .7
 scene.add(pointLight)
+const pointLight_1 = new THREE.PointLight(0xffffff, 2)
+pointLight_1.position.x = 0
+pointLight_1.position.y = -10
+pointLight_1.position.z = 20
+pointLight_1.intensity = .7
+pointLight_1.rotation.y = 6
 
-
-
-
+scene.add(pointLight_1)
 
 
 /*  const pointLightHelper_w = new THREE.PointLightHelper(pointLight, 1)
@@ -662,7 +717,7 @@ function moveCamera() {
     
    
     // console.log(camera.position.x) 
-     console.log(camera.position.z) 
+    //  console.log(camera.position.z) 
     //  console.log(camera.rotation.y)
      //console.log(camera.position.y)
   }
@@ -683,7 +738,7 @@ document.addEventListener('click', (event) => {
     
     console.log(camera.position.y)
 
-
+console.log(backoverflow);
        //Raycaster
 
     raycaster.setFromCamera(mouse, camera)
@@ -790,6 +845,24 @@ if (intersects.find(intersect => intersect.object == projekt_10)) {
   backoverflow = 10;
   overflowscroll = 1;
 }
+if (intersects.find(intersect => intersect.object == projekt_11)) {
+          
+  gsap.to(camera.position, {x: 2.5})
+  gsap.to(camera.position, {y: -5.7})
+  gsap.to(camera.position, {z: 18})
+  gsap.to(camera.rotation, {y: 5.9})
+  backoverflow = 21;
+  overflowscroll = 1;
+}
+if (intersects.find(intersect => intersect.object == projekt_12)) {
+          
+  gsap.to(camera.position, {x: 2.5})
+  gsap.to(camera.position, {y: -7.1})
+  gsap.to(camera.position, {z: 18})
+  gsap.to(camera.rotation, {y: 5.9})
+  backoverflow = 22;
+  overflowscroll = 1;
+}
     
   
 })
@@ -804,6 +877,8 @@ const back7 = document.getElementById("backseven");
 const back8 = document.getElementById("backeight");
 const back9 = document.getElementById("backnine");
 const back10 = document.getElementById("backten");
+const back11 = document.getElementById("backeleven");
+const back12 = document.getElementById("backtwelve");
 back1.addEventListener("click", backone);
 back2.addEventListener("click", backtwo);
 back3.addEventListener("click", backthree);
@@ -814,6 +889,8 @@ back7.addEventListener("click", backseven);
 back8.addEventListener("click", backeight);
 back9.addEventListener("click", backnine);
 back10.addEventListener("click", backten);
+back11.addEventListener("click", backeleven);
+back12.addEventListener("click", backtwelve);
 function backone() {
   
   const t = document.body.getBoundingClientRect().top;
@@ -904,6 +981,24 @@ function backten() {
   backoverflow = 20;
   overflowscroll = 0;
 }
+function backeleven() {
+ 
+  const t = document.body.getBoundingClientRect().top;
+  gsap.to(camera.position, {z: 19.43})
+  gsap.to(camera.position, {x: 0.3868})
+  gsap.to(camera.rotation, {y: t * -0.0009})
+  backoverflow = 31;
+  overflowscroll = 0;
+}
+function backtwelve() {
+ 
+  const t = document.body.getBoundingClientRect().top;
+  gsap.to(camera.position, {z: 19.43})
+  gsap.to(camera.position, {x: 0.3868})
+  gsap.to(camera.rotation, {y: t * -0.0009})
+  backoverflow = 32;
+  overflowscroll = 0;
+}
  
  
 
@@ -932,7 +1027,7 @@ const windowY = window.innerHeight /2;
 let objs = []
 
 scene.traverse((object) => {
-    if (object == projekt_1 || object == projekt_2 || object == projekt_3 || object == projekt_4 || object == projekt_5 || object == projekt_6 || object == projekt_7 || object == projekt_8 || object == projekt_9 || object == projekt_10)
+    if (object == projekt_1 || object == projekt_2 || object == projekt_3 || object == projekt_4 || object == projekt_5 || object == projekt_6 || object == projekt_7 || object == projekt_8 || object == projekt_9 || object == projekt_10 || object == projekt_11 || object == projekt_12)
      objs.push(object)
       /* console.log(objs) */ 
 })
@@ -1076,6 +1171,25 @@ if (backoverflow == 20) {
     pr_10.style.visibility = 'hidden';
     scroll_hid.style.overflow = "visible";
 }
+//Project 11
+if (backoverflow == 21) {
+  pr_11.style.visibility = 'visible';
+} 
+if (backoverflow == 31) {
+  pr_11.style.visibility = 'hidden';
+  scroll_hid.style.overflow = "visible";
+}
+if(overflowscroll == 1) {
+  scroll_hid.style.overflow = "hidden";
+}
+//Project 12
+if (backoverflow == 22) {
+  pr_12.style.visibility = 'visible';
+} 
+if (backoverflow == 32) {
+  pr_12.style.visibility = 'hidden';
+  scroll_hid.style.overflow = "visible";
+}
 if(overflowscroll == 1) {
   scroll_hid.style.overflow = "hidden";
 }
@@ -1085,4 +1199,4 @@ if(overflowscroll == 1) {
     window.requestAnimationFrame(tick)
 }
 
-tick()
+tick();
