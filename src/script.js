@@ -2,7 +2,9 @@ import './style.css'
 
 
 import * as THREE from 'three'
+
 import gsap from 'gsap'
+
 
 
 // import * as dat from 'dat.gui'
@@ -605,6 +607,41 @@ const scroll_hid = document.getElementById("body")
         
         const pr_12 = document.getElementById('Proj-12')  
 
+         //Projekt_13
+
+         const dragon = new THREE.TextureLoader().load('msi_contest.png')
+        
+        
+         dragon.minFilter = THREE.LinearFilter;
+         dragon.magFilter = THREE.LinearFilter;
+         
+         const projekt_13 = new THREE.Mesh(
+           new THREE.PlaneGeometry(2, 1, 1,),
+           new THREE.MeshStandardMaterial({
+             map: dragon,
+           
+             
+           })
+         );
+       
+         scene.add(projekt_13);
+
+         projekt_13.position.x = 0
+         projekt_13.position.y = -7.1
+         projekt_13.position.z = 16
+         projekt_13.rotation.y = 6.2
+
+        /*    gui.add(projekt_13.position, 'x')
+         gui.add(projekt_13.rotation, 'y')
+         gui.add(projekt_13.position, 'z')  */
+         
+       
+           
+         
+        
+        const pr_13 = document.getElementById('Proj-13')  
+      
+
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff, 2)
@@ -863,6 +900,15 @@ if (intersects.find(intersect => intersect.object == projekt_12)) {
   backoverflow = 22;
   overflowscroll = 1;
 }
+if (intersects.find(intersect => intersect.object == projekt_13)) {
+          
+  gsap.to(camera.position, {x: 0})
+  gsap.to(camera.position, {y: -7.1})
+  gsap.to(camera.position, {z: 17})
+  gsap.to(camera.rotation, {y: 6.2})
+  backoverflow = 23;
+  overflowscroll = 1;
+}
     
   
 })
@@ -879,6 +925,7 @@ const back9 = document.getElementById("backnine");
 const back10 = document.getElementById("backten");
 const back11 = document.getElementById("backeleven");
 const back12 = document.getElementById("backtwelve");
+const back13 = document.getElementById("backthirteen");
 back1.addEventListener("click", backone);
 back2.addEventListener("click", backtwo);
 back3.addEventListener("click", backthree);
@@ -891,6 +938,7 @@ back9.addEventListener("click", backnine);
 back10.addEventListener("click", backten);
 back11.addEventListener("click", backeleven);
 back12.addEventListener("click", backtwelve);
+back13.addEventListener("click", backthirteen);
 function backone() {
   
   const t = document.body.getBoundingClientRect().top;
@@ -999,6 +1047,15 @@ function backtwelve() {
   backoverflow = 32;
   overflowscroll = 0;
 }
+function backthirteen() {
+ 
+  const t = document.body.getBoundingClientRect().top;
+  gsap.to(camera.position, {z: 19.43})
+  gsap.to(camera.position, {x: 0.3868})
+  gsap.to(camera.rotation, {y: t * -0.0009})
+  backoverflow = 33;
+  overflowscroll = 0;
+}
  
  
 
@@ -1027,7 +1084,7 @@ const windowY = window.innerHeight /2;
 let objs = []
 
 scene.traverse((object) => {
-    if (object == projekt_1 || object == projekt_2 || object == projekt_3 || object == projekt_4 || object == projekt_5 || object == projekt_6 || object == projekt_7 || object == projekt_8 || object == projekt_9 || object == projekt_10 || object == projekt_11 || object == projekt_12)
+    if (object == projekt_1 || object == projekt_2 || object == projekt_3 || object == projekt_4 || object == projekt_5 || object == projekt_6 || object == projekt_7 || object == projekt_8 || object == projekt_9 || object == projekt_10 || object == projekt_11 || object == projekt_12 || object == projekt_13)
      objs.push(object)
       /* console.log(objs) */ 
 })
@@ -1188,6 +1245,14 @@ if (backoverflow == 22) {
 } 
 if (backoverflow == 32) {
   pr_12.style.visibility = 'hidden';
+  scroll_hid.style.overflow = "visible";
+}
+//Project 13
+if (backoverflow == 23) {
+  pr_13.style.visibility = 'visible';
+} 
+if (backoverflow == 33) {
+  pr_13.style.visibility = 'hidden';
   scroll_hid.style.overflow = "visible";
 }
 if(overflowscroll == 1) {
