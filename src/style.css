@@ -16,12 +16,11 @@ body
 
 
 a{
-  color: rgb(0, 140, 255);
+  color: rgb(255, 255, 255);
  
 }
 a:hover {
-  color: rgb(0, 102, 255);
-  
+ color: rgb(173, 173, 173);
 }
 
 .webgl
@@ -102,16 +101,16 @@ a:hover {
   
   
     header {
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       grid-column: 2 / span 3;
       font-size: 2.5rem;
       padding: 2rem;
       margin-bottom: 2.5rem;
     }
     .about{
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       grid-column: 2/5;
       font-size: 1.5rem;
       padding: 2rem;
@@ -150,8 +149,8 @@ a:hover {
     .edu {
       grid-column: 2 / 6;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-bottom: 5rem;
@@ -159,8 +158,8 @@ a:hover {
     .exp {
       grid-column: 2 / 5;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       margin-bottom: 2.5rem;
     }
@@ -168,8 +167,8 @@ a:hover {
     .proj-title {
       grid-column: 2 / 4;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       height: 8rem;
@@ -181,14 +180,13 @@ button {
   width: 10rem;
   height: 3rem;
   font-size: large;
-  background-color: rgb(0, 140, 255);
-  color: rgb(0, 0, 0);
-  border: 3px solid rgb(0, 12, 255);
+  background-color: rgb(255, 255, 255);
+  
 }
 
 
 button:hover {
-  background-color: rgb(37, 168, 255);
+  background-color: rgb(173, 173, 173);
   
 }
 .grid{
@@ -214,14 +212,14 @@ button:hover {
   width: 6rem;
 
 }
-   
+     /*Projects ---------------------------------------------------------------------------------------------------------------------------*/
     #Proj-1 {
     
       visibility: hidden;
       position: fixed;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       width: 25rem;
@@ -233,8 +231,8 @@ button:hover {
       visibility: hidden;
       position: fixed;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-top: 10rem;
@@ -248,8 +246,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 10rem;
@@ -261,8 +259,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 10rem;
@@ -275,8 +273,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-top: 10rem;
@@ -289,8 +287,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-top: 10rem;
@@ -303,8 +301,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 84rem;
@@ -317,8 +315,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 84rem;
@@ -331,8 +329,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       
@@ -346,8 +344,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 20rem;
@@ -360,8 +358,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 84rem;
@@ -373,8 +371,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 84rem;
@@ -386,8 +384,8 @@ button:hover {
       position: fixed;
       grid-column: 9 / 12;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(6, 24, 48, 0.774);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-left: 84rem;
@@ -402,8 +400,8 @@ button:hover {
       grid-column: 2 / 5;
       margin-top: 380rem;
       padding: 1rem;
-      color: rgb(0, 140, 255);
-      background-color: rgba(7, 7, 43, 0.63);
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
       font-size: 1.25rem;
       line-height: 1.5;
       margin-bottom: 10rem;
@@ -412,6 +410,9 @@ button:hover {
       width: 6rem;
       height: 2rem;
       
+    }
+    .detail-text{
+      margin-top: 1rem;
     }
 
   /*Min width ---------------------------------------------------------------------------------------------------------------------------*/
@@ -441,9 +442,6 @@ button:hover {
               #Proj-8 {
                 margin-left: 70rem;
                 }
-                #Proj-10 {
-                  margin-left: 70rem;
-                  }
                   #Proj-11 {
                     margin-left: 70rem;
                     }
@@ -473,6 +471,9 @@ button:hover {
                 #Proj-12 {
                   margin-left: 60rem;
                   }
+                  #Proj-13 {
+                    margin-left: 60rem;
+                    }
 }
 @media(max-width: 1400px) {
   #Proj-1 {
@@ -499,6 +500,9 @@ button:hover {
                 #Proj-12 {
                   margin-left: 55rem;
                   }
+                  #Proj-13 {
+                    margin-left: 55rem;
+                    }
 }
 @media(max-width: 1300px) {
   #Proj-1 {
@@ -528,15 +532,16 @@ button:hover {
                   #Proj-9 {
                     margin-left: 2rem;
                     }
-                    #Proj-10 {
-                      margin-left: 2rem;
-                      }
+                   
                       #Proj-11 {
                         margin-left: 50rem;
                         }
                         #Proj-12 {
                           margin-left: 50rem;
                           }
+                          #Proj-13 {
+                            margin-left: 50rem;
+                            }
 }
 @media(max-width: 1200px) {
   #Proj-1 {
@@ -563,6 +568,9 @@ button:hover {
                 #Proj-12 {
                   margin-left: 46rem;
                   }
+                  #Proj-13 {
+                    margin-left: 46rem;
+                    }
     
 }
 @media(max-width: 1160px) {
@@ -590,6 +598,9 @@ button:hover {
                 #Proj-12 {
                   margin-left: 45rem;
                   }
+                  #Proj-13 {
+                    margin-left: 45rem;
+                    }
           
 }
 @media(max-width: 1024px) {
@@ -617,6 +628,9 @@ button:hover {
                 #Proj-12 {
                   margin-left: 35rem;
                   }
+                  #Proj-13 {
+                    margin-left: 35rem;
+                    }
 }
    
     

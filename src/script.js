@@ -7,7 +7,7 @@ import gsap from 'gsap'
 
 
 
-// import * as dat from 'dat.gui'
+import * as dat from 'dat.gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 
@@ -15,7 +15,7 @@ const gltfLoader = new GLTFLoader()
 
 
 // Debug
-// const gui = new dat.GUI()
+const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -323,10 +323,10 @@ const scroll_hid = document.getElementById("body")
     );
     scene.add(projekt_1);
     
-    projekt_1.position.x = -2
+    projekt_1.position.x = -2.4
     projekt_1.position.y = .6
-    projekt_1.position.z = 17
-    projekt_1.rotation.y = 1
+    projekt_1.position.z = 17.5
+    projekt_1.rotation.y = 1.5
   
 
     const pr_1 = document.getElementById('Proj-1')
@@ -349,13 +349,13 @@ const scroll_hid = document.getElementById("body")
  );
  scene.add(projekt_2);
  
- projekt_2.position.x = -2
+ projekt_2.position.x = -2.4
  projekt_2.position.y = -.6
- projekt_2.position.z = 17
- projekt_2.rotation.y = 1
+ projekt_2.position.z = 17.5
+ projekt_2.rotation.y = 1.5
 
  const pr_2 = document.getElementById('Proj-2')
-  
+
  //Projekt_3
 
  const video_3 = document.getElementById("vid-3");
@@ -646,8 +646,8 @@ const scroll_hid = document.getElementById("body")
 
 const pointLight = new THREE.PointLight(0xffffff, 2)
 pointLight.position.x = 0
-pointLight.position.y = -2
-pointLight.position.z = 20
+pointLight.position.y = -1
+pointLight.position.z = 19
 pointLight.intensity = .7
 scene.add(pointLight)
 const pointLight_1 = new THREE.PointLight(0xffffff, 2)
@@ -661,7 +661,9 @@ scene.add(pointLight_1)
 
 
 /*  const pointLightHelper_w = new THREE.PointLightHelper(pointLight, 1)
-scene.add(pointLightHelper_w)  */
+scene.add(pointLightHelper_w) 
+const pointLightHelper_w_2 = new THREE.PointLightHelper(pointLight_1, 1)
+scene.add(pointLightHelper_w_2)  */
 
 
 function addStar() {
@@ -786,10 +788,10 @@ console.log(backoverflow);
 
       if (intersects.find(intersect => intersect.object == projekt_1)) {
           
-          gsap.to(camera.position, {x: -1})
+          gsap.to(camera.position, {x: -1.5})
           gsap.to(camera.position, {y: .6})
           gsap.to(camera.position, {z: 17.15})
-          gsap.to(camera.rotation, {y: 1})
+          gsap.to(camera.rotation, {y: 1.5})
           backoverflow = 1;
           overflowscroll = 1;
       }
@@ -798,10 +800,10 @@ console.log(backoverflow);
 
       if (intersects.find(intersect => intersect.object == projekt_2)) {
           
-          gsap.to(camera.position, {x: -.9})
-          gsap.to(camera.position, {y: -.8})
+          gsap.to(camera.position, {x: -1.5})
+          gsap.to(camera.position, {y: -.7})
           gsap.to(camera.position, {z: 17.15})
-          gsap.to(camera.rotation, {y: 1})
+          gsap.to(camera.rotation, {y: 1.5})
           backoverflow = 2;
           overflowscroll = 1;
       }
