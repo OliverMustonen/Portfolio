@@ -1,0 +1,871 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: gray;
+    
+}
+
+
+
+a{
+  color: rgb(255, 255, 255);
+ 
+}
+a:hover {
+ color: rgb(173, 173, 173);
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+}
+.footer{
+    
+    display: flex;
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
+}
+.git {
+  margin-right: 1rem;
+}
+.link {
+  margin-right: 1rem;
+}
+
+#info {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 0;
+	display:block;
+}
+
+.container {
+    width: 1rem;
+    height: 20rem;
+}
+
+.p {
+    z-index: 100;
+}
+
+:root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 350px;
+  
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  main {
+    width: 100vw;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  h1, h2, h3,h4, blockquote {
+    font-family: elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+    header {
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      grid-column: 2 / span 3;
+      font-size: 2.5rem;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+    }
+    .curr {
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      grid-column: 2 / span 3;
+      font-size: 1.25rem;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+    }
+    .about{
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      grid-column: 2/5;
+      font-size: 1.5rem;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+    }
+  
+  /*   section {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      background-color: rgba(7, 7, 43, 0.63);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+     */
+  
+    blockquote {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: 2.5rem;
+    }
+  
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+    }
+  
+    .left {
+      grid-column: 6 / 12;
+    }
+
+    .edu {
+      grid-column: 2 / 6;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+    }
+    .exp {
+      grid-column: 2 / 5;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+    }
+
+    .proj-title {
+      grid-column: 2 / 4;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      height: 8rem;
+      margin-bottom: 10rem;
+      border-radius: 1rem;
+      
+}
+button {
+  
+  border-radius: 10px;
+  width: 10rem;
+  height: 3rem;
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+
+button:hover {
+  background-color: rgb(173, 173, 173);
+  
+}
+.grid{
+     display: grid;
+      grid-template-areas: 
+      'header header'
+      'button1 button2';
+      gap: 5px;
+      
+}
+.btn1{
+  grid-area: button1;
+}
+.btn2{
+  grid-area: button2;
+}
+.header1{
+  grid-area: header;
+}
+.btn-back{
+  border-radius: 4rem;
+  height: 3rem;
+  width: 6rem;
+
+}
+     /*Projects ---------------------------------------------------------------------------------------------------------------------------*/
+    #Proj-1 {
+    
+      visibility: hidden;
+      position: fixed;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      width: 25rem;
+      margin-left: 80rem;
+      margin-top: 10rem;
+      border-radius: 1rem;
+    }
+
+    #Proj-2 {
+      visibility: hidden;
+      position: fixed;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-top: 10rem;
+      margin-left: 80rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    
+    #Proj-3 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 10rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+    }
+
+    #Proj-4 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 10rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+
+    #Proj-5 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-top: 10rem;
+      margin-left: 80rem;
+      width: 25rem;
+      border-radius: 1rem;
+    }
+
+    #Proj-6 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-top: 10rem;
+      margin-left: 80rem;
+      width: 25rem;
+      border-radius: 1rem;
+    }
+
+    #Proj-7 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+
+    #Proj-8 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+
+    #Proj-9 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      
+      margin-left: 20rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+
+    #Proj-10 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 20rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+
+    #Proj-11 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-12 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-13 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-14 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-15 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-16 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-17 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-18 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: 84rem;
+      margin-top: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+    #Proj-19 {
+      visibility: hidden;
+      position: fixed;
+      grid-column: 1 / 12;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-top: 10rem;
+      margin-left: 10rem;
+      width: 25rem;
+      border-radius: 1rem;
+
+    }
+ 
+    
+   
+    
+    .contact_inf {
+      grid-column: 2 / 5;
+      margin-top: 575rem;
+      padding: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgba(91, 97, 7, 0.938);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+    }
+    .watch_it{
+      width: 6rem;
+      height: 2rem;
+      
+    }
+    .detail-text{
+      margin-top: 1rem;
+    }
+
+  /*Min width ---------------------------------------------------------------------------------------------------------------------------*/
+  @media(max-width: 3840px) {
+    #Proj-1 {
+      margin-left: 75rem;
+      }
+      #btn-back1{
+        margin-left: 85rem;
+      }
+      #Proj-2 {
+        margin-left: 75rem;
+        }
+        #Proj-3 {
+          margin-left: 8rem;
+          }
+          #Proj-5 {
+            margin-left: 75rem;
+            }
+            #Proj-6 {
+              margin-left: 75rem;
+              }
+              #Proj-7 {
+                margin-left: 75rem;
+                }
+                #Proj-8 {
+                  margin-left: 75rem;
+                  }
+                    #Proj-11 {
+                      margin-left: 80rem;
+                      }
+  }
+  @media(max-width: 2560px) {
+    #Proj-1 {
+      margin-left: 72rem;
+      }
+      #btn-back1{
+        margin-left: 80rem;
+      }
+      #Proj-2 {
+        margin-left: 72rem;
+        }
+        #Proj-3 {
+          margin-left: 8rem;
+          }
+          #Proj-5 {
+            margin-left: 72rem;
+            }
+            #Proj-6 {
+              margin-left: 72rem;
+              }
+              #Proj-7 {
+                margin-left: 72rem;
+                }
+                #Proj-8 {
+                  margin-left: 72rem;
+                  }
+                    #Proj-11 {
+                      margin-left: 80rem;
+                      }
+  }
+@media(max-width: 1700px) {
+  #Proj-1 {
+    margin-left: 72rem;
+    }
+    #btn-back1{
+      margin-left: 80rem;
+    }
+    #Proj-2 {
+      margin-left: 72rem;
+      }
+      #Proj-3 {
+        margin-left: 8rem;
+        }
+        #Proj-5 {
+          margin-left: 72rem;
+          }
+          #Proj-6 {
+            margin-left: 72rem;
+            }
+            #Proj-7 {
+              margin-left: 72rem;
+              }
+              #Proj-8 {
+                margin-left: 72rem;
+                }
+                  #Proj-11 {
+                    margin-left: 80rem;
+                    }
+}
+@media(max-width: 1600px) {
+  #Proj-1 {
+    margin-left: 60rem;
+    }
+    #Proj-2 {
+      margin-left: 60rem;
+      }
+      #Proj-5 {
+        margin-left: 60rem;
+        }
+        #Proj-6 {
+          margin-left: 60rem;
+          }
+          #Proj-7 {
+            margin-left: 60rem;
+            }
+            #Proj-8 {
+              margin-left: 60rem;
+              }
+              #Proj-11 {
+                margin-left: 80rem;
+                }
+                #Proj-12 {
+                  margin-left: 60rem;
+                  }
+                  #Proj-13 {
+                    margin-left: 60rem;
+                    }
+                    #Proj-14 {
+                      margin-left: 60rem;
+                      }
+                      #Proj-15 {
+                        margin-left: 60rem;
+                        }
+                        #Proj-16 {
+                          margin-left: 60rem;
+                          }
+                          #Proj-17 {
+                            margin-left: 60rem;
+                            }
+                            #Proj-18 {
+                              margin-left: 60rem;
+                              }
+}
+@media(max-width: 1400px) {
+  #Proj-1 {
+    margin-left: 55rem;
+    }
+    #Proj-2 {
+      margin-left: 55rem;
+      }
+      #Proj-5 {
+        margin-left: 55rem;
+        }
+        #Proj-5 {
+          margin-left: 55rem;
+          }
+          #Proj-7 {
+            margin-left: 55rem;
+            }
+            #Proj-8 {
+              margin-left: 55rem;
+              }
+              #Proj-11 {
+                margin-left: 55rem;
+                }
+                #Proj-12 {
+                  margin-left: 55rem;
+                  }
+                  #Proj-13 {
+                    margin-left: 55rem;
+                    }
+}
+@media(max-width: 1300px) {
+  #Proj-1 {
+    margin-left: 50rem;
+    }
+    #Proj-2 {
+      margin-left: 50rem;
+      }
+      #Proj-3 {
+        margin-left: 2rem;
+        }
+        #Proj-4 {
+          margin-left: 2rem;
+          }
+          #Proj-5 {
+            margin-left: 50rem;
+            }
+            #Proj-6 {
+              margin-left: 50rem;
+              }
+              #Proj-7 {
+                margin-left: 50rem;
+                }
+                #Proj-8 {
+                  margin-left: 50rem;
+                  }
+                  #Proj-9 {
+                    margin-left: 2rem;
+                    }
+                   
+                      #Proj-11 {
+                        margin-left: 50rem;
+                        }
+                        #Proj-12 {
+                          margin-left: 50rem;
+                          }
+                          #Proj-13 {
+                            margin-left: 50rem;
+                            }
+                            #Proj-14 {
+                              margin-left: 50rem;
+                              }
+                              #Proj-15 {
+                                margin-left: 50rem;
+                                }
+                                #Proj-16 {
+                                  margin-left: 50rem;
+                                  }
+                                  #Proj-17 {
+                                    margin-left: 50rem;
+                                    }
+                                    #Proj-18 {
+                                      margin-left: 50rem;
+                                      }
+                            #Proj-19 {
+                              margin-left: 2rem;
+                              }
+}
+@media(max-width: 1200px) {
+  #Proj-1 {
+    margin-left: 46rem;
+    }
+    #Proj-2 {
+      margin-left: 46rem;
+      }
+      #Proj-5 {
+        margin-left: 46rem;
+        }
+        #Proj-6 {
+          margin-left: 46rem;
+          }
+          #Proj-7 {
+            margin-left: 46rem;
+            }
+            #Proj-8 {
+              margin-left: 46rem;
+              }
+              #Proj-11 {
+                margin-left: 46rem;
+                }
+                #Proj-12 {
+                  margin-left: 46rem;
+                  }
+                  #Proj-13 {
+                    margin-left: 46rem;
+                    }
+                    #Proj-14 {
+                      margin-left: 46rem;
+                      }
+                      #Proj-15 {
+                        margin-left: 46rem;
+                        }
+                        #Proj-16 {
+                          margin-left: 46rem;
+                          }
+                          #Proj-17 {
+                            margin-left: 46rem;
+                            }
+                            #Proj-18 {
+                              margin-left: 46rem;
+                              }
+    
+}
+@media(max-width: 1160px) {
+  #Proj-1 {
+    margin-left: 45rem;
+    }
+    #Proj-2 {
+      margin-left: 45rem;
+      }
+      #Proj-5 {
+        margin-left: 45rem;
+        }
+        #Proj-6 {
+          margin-left: 45rem;
+          }
+          #Proj-7 {
+            margin-left: 45rem;
+            }
+            #Proj-8 {
+              margin-left: 45rem;
+              }
+              #Proj-11 {
+                margin-left: 45rem;
+                }
+                #Proj-12 {
+                  margin-left: 45rem;
+                  }
+                  #Proj-13 {
+                    margin-left: 45rem;
+                    }
+          
+}
+@media(max-width: 1024px) {
+  #Proj-1 {
+    margin-left: 35rem;
+    }
+    #Proj-2 {
+      margin-left: 35rem;
+      }
+      #Proj-5 {
+        margin-left: 35rem;
+        }
+        #Proj-6 {
+          margin-left: 35rem;
+          }
+          #Proj-7 {
+            margin-left: 35rem;
+            }
+            #Proj-8 {
+              margin-left: 35rem;
+              }
+              #Proj-11 {
+                margin-left: 35rem;
+                }
+                #Proj-12 {
+                  margin-left: 35rem;
+                  }
+                  #Proj-13 {
+                    margin-left: 35rem;
+                    }
+}
+   
+    
+
+/*# sourceMappingURL=main.css.map*/
